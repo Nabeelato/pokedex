@@ -32,3 +32,25 @@ let random = Math.floor(Math.random() * pokemonALL.length);
     
     
 })
+
+
+// Part 2 - Click Open Close - COC
+
+let open = document.querySelector(".pickup");
+let close = document.querySelector(".btn-close");
+let container = document.querySelector(".pokedex-container");
+
+// Event Listeners
+
+open.addEventListener('click', function(){
+
+    container.style.display = 'block';
+
+});
+
+
+close.addEventListener('click', function(){
+
+    container.style.display = "none";
+
+});

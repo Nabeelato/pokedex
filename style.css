@@ -17,11 +17,44 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 100vh;
     
     
 }
 
 /* #E2350D - red */
+
+
+.btn-open {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn-open>h1{
+    background-color: #E2350D;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.btn-open>h1:hover{
+    background-color: white;
+    color: #E2350D;
+}
+
+.pokedex-container{
+    display: none;
+    top: 0;
+    left: 50;
+    z-index: 1;
+    position: fixed;
+}
 
 .container {
     
@@ -32,7 +65,7 @@ height: 100vh;
 }
 
 .card {
-    background-color: #e2340df6;
+    background-color: #e2340d;
     width: 880px;
     height: max-content;
     display: flex;
@@ -41,8 +74,33 @@ height: 100vh;
     flex-direction: column;
     border-radius: 14px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    
     
 }
+
+.btn-close {
+    display: flex;
+    justify-content:left;
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    padding: 0.4rem 1.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: white;
+    color: #e2340d;
+    border-radius: 20px;
+    transform: 0.8s;
+}
+
+.btn-close:hover {
+    background: #e2340d;
+    color: white;
+    border: 1px solid white;
+}
+
 
 .card img {
     width: 200px;
@@ -99,4 +157,12 @@ height: 100vh;
     border-radius: 4rem;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
    margin-bottom: 4rem;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #E2350D;
+    color: white;
+    border: 1px solid white;
 }
