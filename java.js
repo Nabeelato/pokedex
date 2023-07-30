@@ -25,7 +25,7 @@ btn.addEventListener('click', function(){
 let random = Math.floor(Math.random() * pokemonALL.length);
 
 
-    image.setAttribute("src", pokemonALL[random].pokemonName + ".png");
+    image.setAttribute("src", "./" + pokemonALL[random].pokemonName + ".png");
 
     pokemon.innerText = pokemonALL[random].pokemonName;
     description.innerText = pokemonALL[random].details;
